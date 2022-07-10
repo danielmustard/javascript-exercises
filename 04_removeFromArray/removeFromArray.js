@@ -7,7 +7,7 @@ const removeFromArray = function(array, ...args) {
         const indexToRemove = updatedArray.indexOf(element); // we select the index of the current element we are looking at and then slice that index
                                                             //with the code below
         if (indexToRemove > -1){
-            let splicedIndex = updatedArray.splice(indexToRemove, 1);
+            let splicedIndex = updatedArray.splice(indexToRemove, 1); //we spice the seleced array index and then make the change to the 'updated array' variable.
         };
     
     }
