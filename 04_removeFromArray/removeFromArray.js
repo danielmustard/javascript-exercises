@@ -1,19 +1,17 @@
 const removeFromArray = function(array, ...args) {
-    
-    for (const element of args){ //for each element within a possible array of arguments 
+    let updatedArray = array; 
 
-        const indexToRemove = array.indexOf(element); // we select the index of the current element we are looking at and then slice that index
-                                                    //with the code below
-        
+    args.forEach(removeElement); //for each arugument passed in to remove, we run the remove element function. 
+
+    function removeElement(element){
+        const indexToRemove = updatedArray.indexOf(element); // we select the index of the current element we are looking at and then slice that index
+                                                            //with the code below
         if (indexToRemove > -1){
-            let splicedIndex = array.splice(indexToRemove, 1);
-            console.log(array);
-            return array;
+            let splicedIndex = updatedArray.splice(indexToRemove, 1);
         };
-    };
-
-
-  
+    
+    }
+    return updatedArray;
 };
 
 
