@@ -1,9 +1,13 @@
-const add = function() {
-	
+const add = function(...args) {
+  let total = 0;
+  args.forEach(element => {
+      total += element;   
+  });
+  return total;  
 };
 
-const subtract = function() {
-	
+const subtract = function(...args) {
+  return args[0] - args[1];    
 };
 
 const sum = function() {
