@@ -11,6 +11,10 @@ const subtract = function(...args) {
 };
 
 const sum = function() {
+  let total = 0;
+  args.forEach(element => {
+    total += element;
+    });
 	
 };
 
